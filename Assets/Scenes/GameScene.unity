@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 645331718}
   - component: {fileID: 645331721}
   - component: {fileID: 645331720}
+  - component: {fileID: 645331722}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -480,3 +481,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &645331722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645331717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac60d477f2dde164db312aea1b598e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: aa5f8783ea9ae1b458da018a377ac63b, type: 3}
+  - {fileID: 21300000, guid: bad91a49f88de2c4a891fdb6c2d60b03, type: 3}
