@@ -8,6 +8,14 @@ public class Player : MonoBehaviour
     private float gravity = 9.81f * 2f;
     public float jumpForce;
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Obstacle"))
+        {
+            GameManager.GetInstance().GameOver();
+        }
+    }
+
     private void OnEnable()
     {
         direction = Vector3.zero;
@@ -24,8 +32,8 @@ public class Player : MonoBehaviour
         if (character.isGrounded)
         {
             direction = Vector3.down;
-            
-            if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 direction = Vector3.up * jumpForce;
             }

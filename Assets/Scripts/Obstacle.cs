@@ -7,7 +7,6 @@ public class Obstacle : MonoBehaviour
     private void Awake()
     {
         leftEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x - 2f;
-        Debug.Log(Camera.main.ScreenToWorldPoint(Vector3.zero).x);
     }
 
     private void Update()
